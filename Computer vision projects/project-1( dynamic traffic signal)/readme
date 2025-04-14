@@ -1,4 +1,4 @@
-Project Architecture:
+Project Architecture: 
 ---------------------
 1. **Input Layer**:
    - Four video streams simulate real-time traffic from each road connected to the junction.
