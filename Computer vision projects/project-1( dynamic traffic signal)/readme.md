@@ -42,7 +42,7 @@ Performance Notes:
 
 Sample Use Case:
 ----------------
-Imagine a busy intersection in a city like Nizamabad. This system can:
+Imagine a busy intersection in a city like Hyderabad. This system can:
 - Reduce idle time for low-traffic roads.
 - Prioritize ambulance or VIP vehicle lanes (future enhancement).
 - Collect traffic data for smart city planning.
