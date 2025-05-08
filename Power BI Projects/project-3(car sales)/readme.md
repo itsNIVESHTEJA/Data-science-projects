@@ -20,7 +20,7 @@ This repository showcases an interactive **Power BI dashboard** built to analyze
 
 Watch a walkthrough of the Power BI dashboard here:
 
-➡ [Click to Watch the Video](./demo/dashboard-demo.mp4)  
+➡ [Click to Watch the Video](Power BI Projects/project-3(car sales)/Car sales .mp4)  
 *(If it doesn't load in-browser, download to view.)*
 
 ---
