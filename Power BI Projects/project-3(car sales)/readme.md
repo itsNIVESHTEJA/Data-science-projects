@@ -8,19 +8,19 @@ This repository showcases an interactive **Power BI dashboard** built to analyze
 
 ##  Dashboard Highlights
 
-- 📈 Year-over-Year Sales Trends  
-- 🌍 Region-wise and City-wise Sales Analysis  
-- 🚙 Brand and Model Performance Comparison  
-- 🕵️ Interactive Filters and Slicers  
-- 💹 Sales Volume, Revenue, and Units Sold KPIs  
+-  Year-over-Year Sales Trends  
+-  Region-wise and City-wise Sales Analysis  
+-  Brand and Model Performance Comparison  
+-  Interactive Filters and Slicers  
+-  Sales Volume, Revenue, and Units Sold KPIs  
 
 ---
 
-## 🎥 Demo Video
+##  Demo Video
 
 Watch a walkthrough of the Power BI dashboard here:
 
-➡️ [Click to Watch the Video](./Power%20BI%20Projects/project-3%28car%20sales%29/Car%20sales%20.mp4)
+➡ [Click to Watch the Video](./Power%20BI%20Projects/project-3%28car%20sales%29/Car%20sales%20.mp4)
 
 *(If it doesn't load in-browser, download to view.)*
 
@@ -30,7 +30,7 @@ Watch a walkthrough of the Power BI dashboard here:
 
 The dataset used for this project is included for reference:
 
-- 📄 `car_sales_data.csv`
+-  `car_sales_data.csv`
 
 It contains fields like:
 "Model",	"Year",	"Price"	,"Transmission",	"Mileage",	"Fuel", "Type",	"Tax",	"MPG"	,"Engine", "Size"	,"Make"
@@ -39,7 +39,7 @@ It contains fields like:
 
 ---
 
-## 🛠 Tools Used
+##  Tools Used
 
 - **Power BI Desktop** – For dashboard design and visualization  
 - **Microsoft Excel / CSV** – For data preparation and cleaning  
@@ -53,7 +53,7 @@ It contains fields like:
 This project is shared **for educational and portfolio purposes only**.  
 No reuse, redistribution, or commercial use of the dashboard design is allowed.
 
-➡️ License: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+➡ License: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ---
 
