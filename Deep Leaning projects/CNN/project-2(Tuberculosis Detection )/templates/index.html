@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .drop_box {
+            border: 2px dashed #007bff;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background: #eaf4ff;
+        }
+        .upload-icon {
+            font-size: 50px;
+            color: #007bff;
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        #previewImage {
+            max-width: 100%;
+            max-height: 100px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        #resultText {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Upload X-ray Image</h3>
+        <div class="drop_box">
+            <div class="upload-icon">⬆️</div>
+            <p>Select or Drag File Here</p>
+            <p>Supported: PNG, JPG, JPEG, DICOM (.dcm, .dicom)</p>
+            <input type="file" id="fileInput" accept=".png, .jpg, .jpeg, .dcm, .dicom" hidden>
+            <button class="btn" id="chooseFileBtn">Choose File</button>
+            <img id="previewImage">
+            <p id="dicomMessage" style="display: none; color: green;"></p>
+        </div>
+        <button id="predictBtn" class="btn" style="display: none;">Predict</button>
+        <p id="resultText"></p>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById("fileInput");
+        const chooseFileBtn = document.getElementById("chooseFileBtn");
+        const previewImage = document.getElementById("previewImage");
+        const dicomMessage = document.getElementById("dicomMessage");
+        const predictBtn = document.getElementById("predictBtn");
+        const resultText = document.getElementById("resultText");
+
+        let uploadedFile = null;
+
+        chooseFileBtn.onclick = () => fileInput.click();
+
+        fileInput.addEventListener("change", function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                uploadedFile = file;
+                const fileName = file.name;
+                const fileExt = fileName.split('.').pop().toLowerCase();
+
+                previewImage.style.display = "none";
+                dicomMessage.style.display = "none";
+                predictBtn.style.display = "none";
+                resultText.innerText = "";
+
+                if (["png", "jpg", "jpeg"].includes(fileExt)) {
+                    previewImage.src = URL.createObjectURL(file);
+                    previewImage.style.display = "block";
+                    predictBtn.style.display = "block";
+                } 
+                else if (["dcm", "dicom"].includes(fileExt)) {
+                    dicomMessage.innerText = "DICOM file uploaded successfully!";
+                    dicomMessage.style.display = "block";
+                    predictBtn.style.display = "block";
+                } 
+                else {
+                    alert("Invalid file type. Upload PNG, JPG, JPEG, or DICOM (.dcm, .dicom).");
+                    fileInput.value = "";
+                    uploadedFile = null;
+                }
+            }
+        });
+
+        predictBtn.onclick = () => {
+            if (!uploadedFile) {
+                alert("Please upload a file first!");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", uploadedFile);
+
+            resultText.innerText = "Predicting...";
+            
+            fetch("http://127.0.0.1:5000/predict", { 
+                method: "POST",
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultText.innerText = `Result: ${data.prediction}`;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                resultText.innerText = "Error in prediction!";
+            });
+        };
+    </script>
+</body>
+</html>
