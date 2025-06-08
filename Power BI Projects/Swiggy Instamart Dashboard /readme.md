@@ -6,10 +6,11 @@ This project showcases a custom-built Power BI dashboard designed to analyze and
 
 1. **Welcome** – Entry screen with dashboard title and navigation button  
 2. **Home** – Executive summary with high-level KPIs and business highlights  
-3. **Sales** – Sales trends, category-wise analysis, and revenue breakdown  
-4. **Inventory** – Insights into stock received, damaged, and available  
-5. **Feedbacks** – Visualization of customer sentiment and review metrics  
-6. **Marketing** – Campaign performance and customer reach metrics
+3. **Sales** – Sales trends, category location-wise analysis, and avg orders value
+4. **Customers** – customer segmentation, custemer-wise analysis
+5. **Inventory** – Insights into stock received, damaged, and available  
+6. **Feedbacks** – Visualization of customer sentiment and review metrics  
+7. **Marketing** – Campaign performance and customer reach metrics
 
 ##  Tools Used
 
