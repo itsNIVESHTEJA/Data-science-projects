@@ -60,7 +60,7 @@ This project showcases a custom-built Power BI dashboard designed to analyze and
 ###  Feedback
 
 I’d love to hear your thoughts or suggestions to improve the dashboard further.  
-Feel free to open an issue here or connect with me on [LinkedIn](https://www.linkedin.com/).
+Feel free to open an issue here or connect with me on [LinkedIn]([https://www.linkedin.com/](http://www.linkedin.com/in/nivesh-teja)).
 
 ---
 
