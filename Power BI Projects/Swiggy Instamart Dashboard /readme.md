@@ -35,19 +35,23 @@ This project showcases a custom-built Power BI dashboard designed to analyze and
 ![welcome](https://github.com/user-attachments/assets/8f473d4c-7ed6-4d5e-8e18-8f94d3b36b97)
 
 ### 🔹 Home Page
-![Home](images/home.png)
+![Screenshot 2025-06-08 230125](https://github.com/user-attachments/assets/015d5d68-2acc-40c5-b489-2a5371a39200)
+![Screenshot 2025-06-08 230432](https://github.com/user-attachments/assets/b06514f3-7e20-4d83-ae93-fc36a48ac821)
+
 
 ### 🔹 Sales Page
-![Sales](images/sales.png)
+![Screenshot 2025-06-08 230146](https://github.com/user-attachments/assets/e53c1d36-c66b-427a-9017-b92c0833b7e9)
+
 
 ### 🔹 Inventory Page
-![Inventory](images/inventory.png)
+![Screenshot 2025-06-08 230214](https://github.com/user-attachments/assets/e536d773-6985-4ad6-9c26-6f9cf2a3544a)
+
 
 ### 🔹 Feedbacks Page
-![Feedbacks](images/feedbacks.png)
+![Screenshot 2025-06-08 230253](https://github.com/user-attachments/assets/ffc9deb7-6eba-4183-aac7-376409a87d09)
 
 ### 🔹 Marketing Page
-![Marketing](images/marketing.png)
+![Screenshot 2025-06-08 230317](https://github.com/user-attachments/assets/e68c3193-0422-4b2c-a963-ed17d500568c)
 
 ---
 
