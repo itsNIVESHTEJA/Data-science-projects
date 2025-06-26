@@ -1,8 +1,8 @@
-Plant Disease Detection from Leaf Images
+**Plant Disease Detection from Leaf Images**
 
 This project uses deep learning to classify apple leaf diseases from images. It helps automate the identification of common diseases affecting apple plants, using a lightweight Convolutional Neural Network (CNN) deployed through a simple web interface using Streamlit.
 
-Objectives
+*Objectives*
 
 Classify four types of apple leaf conditions using image recognition.
 
@@ -29,7 +29,7 @@ Apple Cedar Rust
 Apple Scab
 Apple Healthy
 
- How to Run
+ *How to Run*
 
 1. Clone the repository
 
