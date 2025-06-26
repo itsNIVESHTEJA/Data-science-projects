@@ -92,7 +92,7 @@ Convert to mobile app using TensorFlow Lite
 
 Improve model accuracy using transfer learning
 
-🙋‍♂️ Author
+**Author**
 
 S. Nivesh TejaLinkedIn | GitHub
 
