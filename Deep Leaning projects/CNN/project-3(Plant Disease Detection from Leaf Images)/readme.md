@@ -74,6 +74,8 @@ Fast, responsive and mobile-friendly
  Source Code: main.py, app.py
 
  GUI App (Streamlit)
+ https://elevate-labs-bphfcc2vdsf8xzh5soyo4x.streamlit.app/
+ 
 
 Filtered Dataset
 https://www.kaggle.com/datasets/shuvokumarbasak2030/apple-leaf-diseases-plant-village-augmented-data
