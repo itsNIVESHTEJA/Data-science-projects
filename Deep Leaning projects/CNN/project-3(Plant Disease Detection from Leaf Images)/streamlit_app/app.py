@@ -8,7 +8,7 @@ IMG_SIZE = (128, 128)
 CLASS_NAMES = ['Apple Black Rot', 'Apple Cedar Rust', 'Apple Scab', 'Apple Healthy']
 
 # Load model
-model = load_model(r'C:\Users\suppa\Desktop\coding\data_scince\Deep_Learning\CNN\Plant Disease Detection from Leaf Images\plant_model_small.h5')
+model = load_model("plant_model_small.h5")
 
 
 # Streamlit UI
