@@ -66,11 +66,8 @@ Model returns predicted disease and confidence score
 
 Fast, responsive and mobile-friendly
 
-Demo Video
 
- Watch the Demo
-
-Deliverables
+**Deliverables**
 
  Trained Model: plant_model_small.h5
 
