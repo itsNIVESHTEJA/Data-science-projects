@@ -76,12 +76,13 @@ Fast, responsive and mobile-friendly
  GUI App (Streamlit)
 
 Filtered Dataset
+https://www.kaggle.com/datasets/shuvokumarbasak2030/apple-leaf-diseases-plant-village-augmented-data
 
  Project Report (PDF)
 
  Demo Video
 
- Future Work
+ **Future Work**
 
 Add more plant species and diseases
 
