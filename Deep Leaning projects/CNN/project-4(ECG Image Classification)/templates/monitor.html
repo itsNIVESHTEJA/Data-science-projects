@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body {
+    background: url("{{ url_for('static', filename='cardiac-bg.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor Logins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 text-white">
+<div class="max-w-5xl mx-auto p-6">
+  <div class="flex items-center justify-between mb-6">
+    <h1 class="text-2xl font-bold flex items-center gap-2">
+      ECG Portal <i class="bx bx-pulse"></i>
+    </h1>
+    <div class="flex items-center gap-3">
+      <span class="text-white/80">Hi, { username }</span>
+      <a href="{{ url_for('logout') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Logout</a>
+
+    </div>
+  </div>
+
+  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">Login Monitor</h2>
+    <table class="w-full text-left border border-white/20 rounded">
+      <thead class="bg-white/10">
+        <tr>
+          <th class="p-3">Username</th>
+          <th class="p-3">Role</th>
+          <th class="p-3">Login Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for username, role, time in logs %}
+        <tr class="border-t border-white/10">
+          <td class="p-3">{{ username }}</td>
+          <td class="p-3">{{ role }}</td>
+          <td class="p-3">{{ time }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a class="inline-block mt-4 underline" href="{{ url_for('admin_dashboard') }}">⬅ Back</a>
+  </div>
+
+</div>
+</body>
+</html>

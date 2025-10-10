@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url("{{ url_for('static', filename='cardiac-bg.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-white">
+
+  <!-- Container -->
+  <div class="max-w-6xl mx-auto p-6">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-3xl font-bold flex items-center gap-2">
+        Admin Dashboard <i class="bx bxs-user-shield"></i>
+      </h1>
+      <div class="flex gap-4">
+        <a href="{{ url_for('home_page') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Home</a>
+        <a href="{{ url_for('classification_page') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Classification</a>
+        <a href="{{ url_for('description_page') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Description</a>
+        <a href="{{ url_for('pending_users') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Pending Users</a>
+        <a href="{{ url_for('monitor') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Monitor Logins</a>
+        <a href="{{ url_for('logout') }}" class="px-3 py-2 rounded bg-red-500 hover:bg-red-600">Logout</a>
+      </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 shadow">
+      <h2 class="text-2xl font-bold mb-2">Welcome, {{ username }} 👋</h2>
+      <p class="text-white/80">
+        You are logged in as an <strong>Admin</strong>.  
+        From here you can manage users, approve/reject pending registrations, monitor login activity,  
+        and navigate to ECG classification features.
+      </p>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      <a href="{{ url_for('pending_users') }}" class="bg-indigo-600 hover:bg-indigo-700 p-6 rounded-xl text-center shadow-lg">
+        <i class="bx bxs-user-plus text-4xl mb-2"></i>
+        <h3 class="text-xl font-semibold">Manage Pending Users</h3>
+        <p class="text-white/80 text-sm">Approve or reject new registrations.</p>
+      </a>
+      <a href="{{ url_for('monitor') }}" class="bg-purple-600 hover:bg-purple-700 p-6 rounded-xl text-center shadow-lg">
+        <i class="bx bx-line-chart text-4xl mb-2"></i>
+        <h3 class="text-xl font-semibold">Monitor Logins</h3>
+        <p class="text-white/80 text-sm">Track login activity of users.</p>
+      </a>
+      <a href="{{ url_for('classification_page') }}" class="bg-pink-600 hover:bg-pink-700 p-6 rounded-xl text-center shadow-lg">
+        <i class="bx bx-heart-circle text-4xl mb-2"></i>
+        <h3 class="text-xl font-semibold">ECG Classification</h3>
+        <p class="text-white/80 text-sm">Upload ECG images and check results.</p>
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>

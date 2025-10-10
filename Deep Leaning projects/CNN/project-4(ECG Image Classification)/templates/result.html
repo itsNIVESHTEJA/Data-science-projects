@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classification Result</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url("{{ url_for('static', filename='cardiac-bg.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-black/60 text-white">
+  <div class="max-w-5xl mx-auto p-6">
+    
+    <!-- HEADER -->
+    <div class="flex items-center justify-between mb-8">
+      <h1 class="text-3xl font-bold flex items-center gap-2">
+        ECG Classification Result <i class="bx bx-pulse text-red-400"></i>
+      </h1>
+      <div class="flex items-center gap-3">
+        <a href="{{ url_for('home_page') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Home</a>
+        <a href="{{ url_for('classification_page') }}" class="px-3 py-2 rounded bg-white/10 hover:bg-white/20">Classification</a>
+        <a href="{{ url_for('logout') }}" class="px-3 py-2 rounded bg-red-500 hover:bg-red-600">Logout</a>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="bg-white/10 backdrop-blur rounded-2xl p-8 shadow space-y-6 text-center">
+
+      <!-- Uploaded ECG Image -->
+      <div>
+        <h2 class="text-xl font-bold text-cyan-300 mb-3">📷 Uploaded ECG</h2>
+        {% if filename %}
+          <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded ECG" class="mx-auto rounded-lg shadow-lg max-h-80">
+        {% else %}
+          <p class="text-white/70">No image uploaded.</p>
+        {% endif %}
+      </div>
+
+      <!-- Classification Result -->
+      <div>
+        <h2 class="text-xl font-bold text-cyan-300 mb-3">🔍 Classification Result</h2>
+        {% if result %}
+          <p class="text-3xl font-bold text-yellow-300">{{ result }}</p>
+          
+          <!-- Explanation -->
+          <div class="mt-4 text-white/80">
+            {% if result == "Myocardial_Infarction" %}
+              <p><b>Myocardial Infarction (Heart Attack):</b> This condition indicates restricted blood flow to the heart, requiring immediate medical attention.</p>
+            {% elif result == "History_MI" %}
+              <p><b>History of Myocardial Infarction:</b> Suggests previous occurrence of heart attack. Regular checkups are recommended.</p>
+            {% elif result == "Abnormal_Heartbeat" %}
+              <p><b>Abnormal Heartbeat (Arrhythmia):</b> Detected irregular rhythm in the ECG. Monitoring and further testing are suggested.</p>
+            {% elif result == "Normal" %}
+              <p><b>Normal:</b> ECG pattern appears healthy and within normal range.</p>
+            {% else %}
+              <p>Result explanation not available.</p>
+            {% endif %}
+          </div>
+        {% else %}
+          <p class="text-white/70">No result generated yet.</p>
+        {% endif %}
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="{{ url_for('classification_page') }}" class="px-5 py-2 rounded bg-blue-500 hover:bg-blue-600 text-white">🔄 Classify Another</a>
+        <a href="{{ url_for('home_page') }}" class="px-5 py-2 rounded bg-green-500 hover:bg-green-600 text-white">🏠 Back to Home</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
