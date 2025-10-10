@@ -1,0 +1,1 @@
+flash('Logged out.', 'success')
