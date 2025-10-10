@@ -1,8 +1,10 @@
 
 # 🧠 Brain Tumor Classification using Deep Learning (CNN + Flask Web App)
 ## photos
-<img width="1912" height="920" alt="Screenshot 2025-10-10 115113" src="https://github.com/user-attachments/assets/398f75e8-f865-436c-bc78-52ffcbdaaa66" />
 <img width="1920" height="1020" alt="Screenshot 2025-10-10 115037" src="https://github.com/user-attachments/assets/54f8d689-1fef-4ef0-afc3-59147bde9de8" />
+
+<img width="1912" height="920" alt="Screenshot 2025-10-10 115113" src="https://github.com/user-attachments/assets/398f75e8-f865-436c-bc78-52ffcbdaaa66" />
+
 <img width="1920" height="1020" alt="Screenshot 2025-10-10 115133" src="https://github.com/user-attachments/assets/734b1b32-7293-4356-bea3-26e1793bba43" />
 
 ## photos
