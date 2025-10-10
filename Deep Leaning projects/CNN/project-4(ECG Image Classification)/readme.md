@@ -143,7 +143,7 @@ ecg-image-classification/
 
 ## 👨‍💻 Author
 **S. Nivesh Teja**  
-📧 [tsaikumar158@gmail.com](mailto:suppalaniveshteja@gmail.com)  
+📧 [suppalaniveshteja@gmail.com](mailto:suppalaniveshteja@gmail.com)  
 🔗 [GitHub](https://github.com/itsNIVESHTEJA))  
 🔗 [LinkedIn](https://www.linkedin.com/in/s-niveshteja)
 
