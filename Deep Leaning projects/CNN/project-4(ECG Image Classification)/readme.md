@@ -1,7 +1,19 @@
 
-# 💓 ECG Image Classification using Deep Learning (CNN + Flask Web App)
+#  ECG Image Classification using Deep Learning (CNN + Flask Web App)
 
 ##photos
+
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104658" src="https://github.com/user-attachments/assets/9d250555-45ba-46b2-9249-d38c6116676d" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 105251" src="https://github.com/user-attachments/assets/832e3335-337c-478f-a061-de74434805f5" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 105215" src="https://github.com/user-attachments/assets/6d00bd45-ad25-4abd-9adb-239444394ffe" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 105158" src="https://github.com/user-attachments/assets/2d263a0b-37c1-4f67-bbbf-0e9a9122b4df" />
+<img width="1908" height="966" alt="Screenshot 2025-10-10 105005" src="https://github.com/user-attachments/assets/3ddb4b91-8031-4b76-b2ba-3e539fa4ca24" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104921" src="https://github.com/user-attachments/assets/67591841-9da0-4acc-996c-55569484b388" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104905" src="https://github.com/user-attachments/assets/2391ab2d-7993-4099-8f3e-b6a13594a14a" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104852" src="https://github.com/user-attachments/assets/21f1ab73-4f4f-4f7f-85f4-cb645334d1ea" />
+<img width="1918" height="974" alt="Screenshot 2025-10-10 104832" src="https://github.com/user-attachments/assets/243eba1a-09ab-4b4f-bcb0-cd5dfeb46e73" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104738" src="https://github.com/user-attachments/assets/5a8fb423-cfe6-4a9d-8d7c-500d61e919df" />
+<img width="1920" height="1020" alt="Screenshot 2025-10-10 104721" src="https://github.com/user-attachments/assets/88d356ca-16fa-4bc9-b112-a74128a55d0d" />
 
 
 ## 📘 Overview
@@ -131,8 +143,8 @@ ecg-image-classification/
 
 ## 👨‍💻 Author
 **S. Nivesh Teja**  
-📧 [tsaikumar158@gmail.com](mailto:tsaikumar158@gmail.com)  
-🔗 [GitHub](https://github.com/your-username)  
+📧 [tsaikumar158@gmail.com](mailto:suppalaniveshteja@gmail.com)  
+🔗 [GitHub](https://github.com/itsNIVESHTEJA))  
 🔗 [LinkedIn](https://www.linkedin.com/in/s-niveshteja)
 
 ---
