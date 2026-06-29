@@ -3,6 +3,8 @@
 > **97% accuracy** — Bidirectional LSTM model for robust spam / ham email classification, built with TensorFlow/Keras and served via a Flask web app.
 
 ---
+![Uploading Screenshot 2026-06-30 031212.png…]()
+
 
 ## Project Overview
 
