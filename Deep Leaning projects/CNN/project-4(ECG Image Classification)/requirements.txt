@@ -1,5 +1,0 @@
-flask
-openpyxl
-tensorflow
-pillow
-werkzeug

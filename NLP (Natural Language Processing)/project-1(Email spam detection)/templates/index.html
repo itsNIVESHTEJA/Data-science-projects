@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spam Detector — BiLSTM</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="badge">BiLSTM · NLP · TensorFlow</div>
+      <h1>Email Spam <span class="accent">Detector</span></h1>
+      <p class="subtitle">
+        Paste any email or SMS message below and the BiLSTM model will classify
+        it as <strong>spam</strong> or <strong>ham</strong> in real time.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ── Input card ── -->
+    <section class="card" id="input-card">
+      <label class="card-label" for="message-input">Message</label>
+      <textarea
+        id="message-input"
+        placeholder="e.g. Congratulations! You have been selected to win a FREE prize…"
+        rows="6"
+      ></textarea>
+
+      <div class="actions">
+        <button id="predict-btn" class="btn-primary">
+          <span class="btn-icon">⚡</span> Analyse
+        </button>
+        <button id="clear-btn" class="btn-ghost">Clear</button>
+      </div>
+    </section>
+
+    <!-- ── Result card ── -->
+    <section class="card result-card hidden" id="result-card">
+      <div class="result-verdict" id="result-verdict">—</div>
+      <div class="result-meta">
+        <span>Confidence: <strong id="result-confidence">—</strong></span>
+        <span>P(spam): <strong id="result-prob">—</strong></span>
+      </div>
+      <div class="prob-bar-wrap">
+        <div class="prob-bar" id="prob-bar"></div>
+      </div>
+    </section>
+
+    <!-- ── Examples ── -->
+    <section class="examples">
+      <h2 class="section-heading">Try an example</h2>
+      <div class="example-grid">
+        <button class="example-btn spam-example"
+                data-msg="WINNER!! As a valued network customer you have been selected to receivea £900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only.">
+          🔴 Spam example
+        </button>
+        <button class="example-btn ham-example"
+                data-msg="Hey, are we still meeting for lunch at 1pm? Let me know if the time changes.">
+          🟢 Ham example
+        </button>
+        <button class="example-btn spam-example"
+                data-msg="Free entry in 2 a wkly comp to win FA Cup final tkts. Text FA to 87121 to receive entry question.">
+          🔴 Spam example 2
+        </button>
+        <button class="example-btn ham-example"
+                data-msg="Okay, I will be home late tonight. Please save some dinner for me.">
+          🟢 Ham example 2
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>BiLSTM Spam Detector · Built with TensorFlow / Keras &amp; Flask</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

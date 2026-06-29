@@ -1,1 +1,0 @@
-flash('Logged out.', 'success')
